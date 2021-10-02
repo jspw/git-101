@@ -2,7 +2,23 @@
 
 ## Beginner
 
-## Full Examples
+### Basic commands
+
+- init repository : `git init`
+- add a file : `git add filename`
+- add all files : `git add .`
+- commit : `git commit -m "commit message"`
+- check status which files you have added/deleted/modified : `git status`
+- list of all branches : `git branch`
+- create a new branch : `git branch branch_name`
+- delete a branch : `git branch -d branch_name`
+- checkout (shift from one branch to another) : `git checkout branch_name`
+- create a new branch and checkout : `git checkout -b new_branch_name`
+- push code : `git push origin branch_name`
+
+### Full Examples
+
+#### Create a new repository
 
 - Create a repository : Create a empty repository in github.
 
@@ -44,6 +60,24 @@ Now we need to link our local repo with github server somehow !
 by this command we are creating a origin / we are adding a location of our remote repository where we will push our file or pull files from.
 
 - push code to github : `git push origin main` (as our branch name is main)
+
+#### Working on a repository
+
+Scenario is we have a repository and we want to contribute in that open source project.
+
+Link of the repository : [git-101](https://github.com/jspw/git-101)
+
+- First of all we need to clone the repository : `git clone https://github.com/jspw/git-101.git` (this will create a folder named git-101 and copy the repository)
+
+If we wish to copy the repo into a folder as our wish, then we can just add the folder name at the end of the command like this `git clone repo_url dir_name`
+
+Now we have cloned the repo and we can add changes as our wish (not exactly your wish though :3).
+
+Lets assume we have added a file named contributor.md and other files as well. Now we need to add the files or directories.
+
+- add all files : `git add .`
+- commit changes : `git commit -m 'add contributor file'`
+- push code : `git push origin main` (this is a very beginner level tutorial, actually we never push code into main directly, we will lean this things later)
 
 ## Intermediate
 
